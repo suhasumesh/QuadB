@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const tickerSchema = new Schema({
+const tickerSchema = new Schema({ 
     base_unit: String,
     nameid: String,
     lastPrice: Number,

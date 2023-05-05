@@ -11,7 +11,7 @@ function App() {
     async function fetchTickers() {
       const response = await fetch('http://localhost:5000/api/v2');
       const data = await response.json();
-      const tickersData = Object.entries(data).map(([key, value]) => ({
+      const tickersData = Object.entries(data).map(([key, value]) => ({ 
         base_unit:value.base_unit,
         nameid: key,
         lastPrice: value.last,

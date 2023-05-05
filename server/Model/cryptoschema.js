@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 const cryptoSchema = new Schema({
     base_unit:{
-        type:String,
+        type:String, 
         required:true
     },
     name:{
